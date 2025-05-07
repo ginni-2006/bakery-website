@@ -1,0 +1,127 @@
+/* style.css */
+body {
+  font-family: 'Lato', sans-serif;
+}
+:root {
+  --cerise: #E63462;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--cerise); /* Cerise color */
+}
+/* Explore Products section background */
+#explore {
+  background-color: #E3B505; /* Saffron */
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+/* Button - optional, for contrast */
+.btn-custom {
+  background-color: white;
+  color: #E3B505;
+  border: 2px solid white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #fff176;
+  color: #333745;
+}
+
+/* Other sections */
+#products {
+  background-color: #2F97C1; /* Blue-Green */
+  color: white;
+}
+
+#testimonials {
+  background-color: #E63462; /* Cerise */
+  color: white;
+}
+
+#contact {
+  background-color: #F4FAFF; /* Alice Blue */
+}
+
+footer {
+  background-color: #E63462; /* Cerise */
+  color: white;
+}
+.big-heading {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #333745; /* Gunmetal */
+  margin-bottom: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #f4faff; /* Alice Blue for soft highlight */
+  border-radius: 10px;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1.2s ease-out forwards;
+}
+
+/* Keyframes for smooth fade-in */
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive font size for smaller screens */
+@media (max-width: 768px) {
+  .big-heading {
+    font-size: 3rem;
+  }
+}
+/* Cerise color for navigation bars */
+.navbar-custom {
+  background-color: #E63462;
+}
+
+.footer-custom {
+  background-color: #E63462;
+}
+.customer-name {
+  color: #333745; /* Gunmetal or your preferred neutral */
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #333745 !important; /* Force Gunmetal color */
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  color: var(--gunmetal);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
